@@ -1,0 +1,162 @@
+body, html{
+    margin: 0px auto;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #f7f5f2 ;
+    background-color: #0c4448;
+}
+.opening-animation {
+    animation: fade-in 4s ease forwards;
+  }
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } 
+#Main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#ImgSection{
+    display: inline-block;
+    
+}
+#Img{
+    margin: 40px;
+}
+#PortfolioImg{
+    width: 350px;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+   
+}
+
+#InfoSection{
+    display: inline-block;
+    margin: 80px 5px 0px 40px;
+}
+
+#InfoSection h1{
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    font-size: 50px;
+    margin: 0%;
+}
+#Name{
+    color: #e1a66f;
+}
+#InfoSection h2{
+    margin: 0% ;
+    padding-left: 30px;
+    font-size: 40PX;
+    
+}
+#InfoSection a{
+    text-decoration: none;
+    color: black;
+}
+#moreabout {
+    display: inline;
+    border-radius: 50px;
+    color: black;
+    border: 1px solid #547577;
+    padding: 0px 0px 0px 20px;
+    background-color: #0c4448;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0% auto;
+    margin: 90px 0px 0px 40px;
+}
+
+#moreabout  .fa-arrow-right {
+    font-size: 25px;
+    color: white;
+    background-color: #547577;
+    padding: 13px 17px 15px 17px ;
+    border-radius: 100%;
+    border: 1px solid #547577;
+    margin: 0% auto;
+    margin-left: 20px
+}
+#moreabout:hover{
+    color: white;
+    background-color: #547577;
+    transition: 0.5s ;
+}
+#MenuSection {
+    display: inline;
+    margin-left: 90px;
+}
+
+#MenuSection a{
+    display: flex ;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.hide i{
+    padding: 15px;
+    border-radius: 100%;
+    font-size: 25px;
+    color: white;
+    background-color: #37666b;
+}
+.hide .fa-home{
+    background-color: #d89f6b;
+    
+}
+.hide .fa-user{
+    padding: 15px 18px;
+    border-radius: 100%;
+    font-size: 25px;
+    color: white;
+    background-color: #37666b;
+}
+.hide .text{
+    opacity: 0;
+    margin-right: 10px;
+}
+.hide {
+    border-radius: 50px;
+    color: black;
+    border: none;
+    padding: 0px 0px 0px 20px;
+    background-color: #0c4448;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0% auto;
+}
+.hide:hover{
+    background-color: #d89f6b;
+    transition:  .6s ease; 
+    padding: 0px 0px 0px 20px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0% auto;
+}
+.hide:hover i{
+    background-color: #d89f6b;
+    transition:  .6s ease; 
+}
+.hide:hover .text{
+    opacity: 1;
+    color: white;
+    margin-right: 10px;
+    transition:  .6s ease; 
+}
+.hide .fa-sign-in{
+    margin: 0% auto;
+    padding: 15px 17px;
+}
