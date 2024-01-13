@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./resources/font-awesome-4.7.0/css/font-awesome.css">
+
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    
+    <div id="Main">
+        <div id="header">
+            <h1>works</h1>
+            <h2>my <span>portfolio</span></h2>
+        </div>
+
+        <form action="Project" id="imageForm">
+            <div class="gallery">
+                <label>
+                    <input type="radio" name="page" value="https://github.com/Vidhi093/Grocery-Shop-JDBC" onclick="redirectToNextPage('page1')">
+                    <img src="./resources/gms.jpg" alt="grocery system">
+                </label>
+                <label>
+                    <input type="radio" name="page" value="https://github.com/Vidhi093/Travel-Management-System" onclick="redirectToNextPage('page2')">
+                    <img src="./resources/tms.jpg" alt="travel system">
+                </label>
+                <label>
+                    <input type="radio" name="page" value="https://github.com/Vidhi093/Library-Management-System-Core-Java" onclick="redirectToNextPage('page3')">
+                    <img src="./resources/lms.jpg" alt="library system" >
+                 </label>
+                <label>
+                    <input type="radio" name="page" value="https://github.com/Vidhi093/Alpha" onclick="redirectToNextPage('page4')">
+                    <img src="./resources/alpha.png" alt="webpage alpha">
+                </label>
+                <label>
+                    <input type="radio" name="page" value="https://github.com/Vidhi093/Lens-Clone" onclick="redirectToNextPage('page5')">
+                    <img src="./resources/lens.png" alt="webpage lens">
+                </label>
+                <label>
+                    <input type="radio" name="page" value="https://github.com/Vidhi093/user-registration-system" onclick="redirectToNextPage('page6')">
+                    <img src="./resources/urs.jpg" alt="user registration">
+                </label>
+                <label>
+                    <input type="radio" name="page" value="https://github.com/Vidhi093/Employee-Management-System" onclick="redirectToNextPage('page7')">
+                    <img src="./resources/ems.jpg" alt="employee system">
+                </label>
+                <label>
+                    <input type="radio" name="page" value="https://github.com/Vidhi093/Forty" onclick="redirectToNextPage('page8')">
+                    <img src="./resources/forty.png" alt="webpage forty">
+                </label>
+                <label>
+                    <input type="radio" name="page" value="portfolio" onclick="redirectToNextPage('page8')">
+                    <img src="./resources/portfolio.jpg" alt="portfolio">
+                </label>
+                
+              </div>
+ 
+        </form>
+        
+        <div id="MenuSection">
+            <a href="index.html" id="home">
+                <button class="hide">
+                    <span class="text">Home</span>
+                    <i class="fa fa-home" aria-hidden="true"></i></button></a> 
+            <a href="about.html" id="about">
+                <button class="hide">
+                    <span class="text">About</span>
+                    <i class="fa fa-user" aria-hidden="true"></i></button></a>
+            <a href="project.html" id="project">
+                <button class="hide">
+                    <span class="text">Project</span>
+                    <i class="fa fa-briefcase" aria-hidden="true"></i></button></a>
+            <a href="contact.html" id="contact">
+                <button class="hide">
+                    <span class="text">Contact</span>
+                    <i class="fa fa-comments" aria-hidden="true"></i></button></a>
+                    <a href="login.html" id="login">
+                        <button class="hide">
+                            <span class="text">Login </span>
+                            <i class="fa fa-sign-in" aria-hidden="true"></i></button></a>
+        </div>
+    </div>
+
+    <script>
+        function redirectToNextPage(page) {
+            document.getElementById('imageForm').action = "Project?page="+page;
+            document.getElementById('imageForm').submit();
+        }
+    </script>
+</body>
+</html>
